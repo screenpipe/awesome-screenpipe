@@ -27,7 +27,6 @@ Screenpipe is an open-source, local-first AI assistant that continuously capture
 
 - [screenpipe/uniOCR](https://github.com/screenpipe/uniOCR) — Native OCR for macOS, Windows, Linux
 - [screenpipe/audiopipe](https://github.com/screenpipe/audiopipe) — Fast speech-to-text in Rust (Qwen3-ASR, CoreML, DirectML, CUDA)
-- [@screenpipe/js](https://www.npmjs.com/package/@screenpipe/js) — Official JavaScript/TypeScript SDK
 - [screenpipe-mcp](https://www.npmjs.com/package/screenpipe-mcp) — MCP server npm package (`npx -y screenpipe-mcp`)
 
 ## Built-in Pipes
@@ -84,7 +83,6 @@ Screenpipe works with AI coding tools via MCP or direct API access:
 ### Hackathons
 
 - [Screenpipe Agentic Hackathon](https://www.sprint.dev/hackathons/screenpipe) — LLM agent projects built on Screenpipe (Sprint.dev)
-- [Screenpipe Computer Use Hackathon](https://www.sprint.dev/hackathons/screenpipecomputeruse) — Desktop automation projects (Sprint.dev)
 
 ## Service Integrations
 
