@@ -7,6 +7,7 @@ Screenpipe is an open-source, local-first AI assistant that continuously capture
 ## Contents
 
 - [Official Resources](#official-resources)
+- [Official Libraries](#official-libraries)
 - [Built-in Pipes](#built-in-pipes)
 - [MCP Server](#mcp-server)
 - [AI Coding Tool Integrations](#ai-coding-tool-integrations)
@@ -21,6 +22,13 @@ Screenpipe is an open-source, local-first AI assistant that continuously capture
 - [API Reference](https://docs.screenpi.pe/llms-full.txt) — Full REST API reference (60+ endpoints)
 - [Pipe Development Guide](https://docs.screenpi.pe/docs/plugins) — Build custom pipes
 - [Discord](https://discord.gg/screenpipe) — Community chat
+
+## Official Libraries
+
+- [screenpipe/uniOCR](https://github.com/screenpipe/uniOCR) — Native OCR for macOS, Windows, Linux
+- [screenpipe/audiopipe](https://github.com/screenpipe/audiopipe) — Fast speech-to-text in Rust (Qwen3-ASR, CoreML, DirectML, CUDA)
+- [@screenpipe/js](https://www.npmjs.com/package/@screenpipe/js) — Official JavaScript/TypeScript SDK
+- [screenpipe-mcp](https://www.npmjs.com/package/screenpipe-mcp) — MCP server npm package (`npx -y screenpipe-mcp`)
 
 ## Built-in Pipes
 
@@ -64,8 +72,19 @@ Screenpipe works with AI coding tools via MCP or direct API access:
 
 ## Community Projects
 
-- [Different AI / Note Companion](https://github.com/different-ai/note-companion) — Obsidian plugin that uses Screenpipe for AI-powered note-taking
-- [Screenpipe Terminator](https://github.com/screenpipe/terminator) — Computer use SDK for desktop automation
+- [Different AI / Note Companion](https://github.com/different-ai/note-companion) — Obsidian plugin with Screenpipe integration for AI-powered meeting notes and screen activity search
+- [TanGentleman/screenpipe-python-client](https://github.com/TanGentleman/screenpipe-python-client) — Python client to debug and interact with Screenpipe's API
+- [baseballwalkerchris/screenpipe-hackathon](https://github.com/baseballwalkerchris/screenpipe-hackathon) — Hackathon project built on Screenpipe
+
+### Integration Requests in Other Projects
+
+- [PrivateGPT — Screenpipe integration](https://github.com/zylon-ai/private-gpt/issues/2200) — Proposed integration for local screen/audio context
+- [Aider — Screenpipe for screen context](https://github.com/Aider-AI/aider/issues/4800) — Proposed integration for coding session context
+
+### Hackathons
+
+- [Screenpipe Agentic Hackathon](https://www.sprint.dev/hackathons/screenpipe) — LLM agent projects built on Screenpipe (Sprint.dev)
+- [Screenpipe Computer Use Hackathon](https://www.sprint.dev/hackathons/screenpipecomputeruse) — Desktop automation projects (Sprint.dev)
 
 ## Service Integrations
 
