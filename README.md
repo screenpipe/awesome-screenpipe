@@ -2,7 +2,7 @@
 
 > A curated list of resources, integrations, pipes, and community projects for [Screenpipe](https://screenpi.pe) — AI that knows everything you've seen, said, or heard.
 
-Screenpipe is an open-source, local-first AI assistant that continuously captures your screen, audio, and keyboard activity, making it searchable and actionable via AI.
+Screenpipe captures screen text and audio locally while recording is enabled, making computer history searchable for people and AI assistants. Its source is available under the [Screenpipe Commercial License](https://github.com/screenpipe/screenpipe/blob/main/LICENSE.md), not an open-source license. Optional cloud AI, transcription, sync, and connected services can transmit context off-device; see the [privacy data flow](https://docs.screenpipe.com/privacy-data-flow).
 
 ## Contents
 
@@ -20,14 +20,14 @@ Screenpipe is an open-source, local-first AI assistant that continuously capture
 - [Screenpipe](https://github.com/screenpipe/screenpipe) — Main repository (desktop app + CLI)
 - [Documentation](https://docs.screenpi.pe) — Official docs
 - [API Reference](https://docs.screenpi.pe/llms-full.txt) — Full REST API reference (60+ endpoints)
-- [Pipe Development Guide](https://docs.screenpi.pe/docs/plugins) — Build custom pipes
+- [Scheduled Task Guide](https://docs.screenpipe.com/scheduled-tasks) — Build custom pipes
 - [Discord](https://discord.gg/screenpipe) — Community chat
 
 ## Official Libraries
 
 - [screenpipe/uniOCR](https://github.com/screenpipe/uniOCR) — Native OCR for macOS, Windows, Linux
 - [screenpipe/audiopipe](https://github.com/screenpipe/audiopipe) — Fast speech-to-text in Rust (Qwen3-ASR, CoreML, DirectML, CUDA)
-- [screenpipe-mcp](https://www.npmjs.com/package/screenpipe-mcp) — MCP server npm package (`npx -y screenpipe-mcp`)
+- [screenpipe-mcp](https://www.npmjs.com/package/screenpipe-mcp) — MCP server npm package; see [setup instructions](https://github.com/screenpipe/screenpipe/tree/main/packages/screenpipe-mcp#installation)
 
 ## Built-in Pipes
 
@@ -40,7 +40,7 @@ Pipes are plugins that run inside Screenpipe and process your captured data.
 
 ## MCP Server
 
-Screenpipe exposes an [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server, letting any MCP-compatible AI client query your screen history.
+Screenpipe exposes an [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server for retrieving recorded context and managing supported actions. Use **Settings > Connections** in the desktop app for the recommended setup: it configures the bundled runtime and `SCREENPIPE_LOCAL_API_KEY`. Manual setup requires a running Screenpipe instance; follow the [official MCP installation guide](https://github.com/screenpipe/screenpipe/tree/main/packages/screenpipe-mcp#installation). Retrieved context is available to the connected assistant and its configured model provider.
 
 ### Compatible Clients
 
@@ -106,11 +106,11 @@ Screenpipe connects to external services via the Settings > Connections panel:
 
 - [Building a Personal Knowledge Management System with Screenpipe](https://dev.to/medsonmoombe/building-a-personal-knowledge-management-system-with-screenpipe-48ch) — DEV.to tutorial
 - [Screenpipe Blog](https://screenpi.pe/blog) — Official blog with guides and updates
-- [Screenpipe Docs — Getting Started](https://docs.screenpi.pe/docs/getting-started) — Quick start guide
+- [Screenpipe Docs — Getting Started](https://docs.screenpipe.com/getting-started) — Quick start guide
 
 ## Contributing
 
-Contributions welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
+Contributions welcome! Include the project URL and a short description of how it integrates with Screenpipe.
 
 If you've built something with Screenpipe, please open a PR to add it here.
 
