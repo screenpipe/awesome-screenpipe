@@ -82,7 +82,7 @@ Screenpipe works with AI coding tools via MCP or direct API access:
 
 ### Hackathons
 
-- [Screenpipe hackathon starter](https://github.com/screenpipe/hackathon-starter): three runnable Bun examples for meeting follow-ups, reviewed workflow replay and a searchable work dashboard. Includes fictional data, local API setup and project ideas; no AI key is required for sample mode.
+- [Screenpipe hackathon starter](https://github.com/screenpipe/hackathon-starter): three connected Bun starters for evidence-backed SOP drafts, workflow review with frozen snapshots, and bounded replay. Includes fictional data, local API setup and acceptance tests; no AI key is required for sample mode.
 - [Screenpipe Agentic Hackathon](https://www.sprint.dev/hackathons/screenpipe) — LLM agent projects built on Screenpipe (Sprint.dev)
 
 ## Service Integrations
