@@ -82,7 +82,7 @@ Use these Screenpipe-specific setup guides to connect your assistant to recorded
 
 ## Community Projects
 
-Descriptions below are based on each project's public documentation, checked October 7, 2026. These are independently maintained projects; current Screenpipe compatibility has not been runtime-tested. Check each project's setup, license, and model-provider requirements.
+Descriptions below are based on each project's public documentation, checked October 7, 2026. These are independently maintained projects; current Screenpipe compatibility has not been runtime-tested. Entries marked as earlier Next.js pipes use the previous pipe architecture and may require porting. Check each project's setup, license, and model-provider requirements.
 
 ### Notes and personal memory
 
@@ -91,6 +91,11 @@ Descriptions below are based on each project's public documentation, checked Oct
 - [Screenpipe Distiller](https://github.com/marcelsamyn/screenpipe-distiller): Condenses daily capture into a Markdown memory document using OpenRouter and uploads it to a compatible memory backend
 - [Zelin's AI Assistant](https://github.com/Wan-ZL/zelin-ai-assistant): Exports Screenpipe context to an Obsidian wiki and turns incoming requests into approval cards for Claude agents
 - [Agentic Cortex](https://github.com/albert-ying/agentic-cortex): Personal assistant framework combining structured Markdown memory, Screenpipe context, and OpenClaw or Claude Code
+- [WholeMem](https://github.com/denkengeistit/WholeMem): MCP server combining Screenpipe captures, mem0 search, Obsidian daily notes, and workspace file history
+- [Atriveo Cortex](https://github.com/atishay-kasliwal/atriveo-cortex): Ollama-powered inspector that extracts projects, commitments, and ideas from Screenpipe's SQLite data and lets users rate the results
+- [Personal Memory Engine](https://github.com/Igloo302/pme): Dashboard for searching and condensing Screenpipe and OpenChronicle captures, with an OpenRouter-backed processing pipeline
+- [Mac Activity Tracker](https://github.com/CruceSaunders/mac-activity-tracker): Combines ActivityWatch, Screenpipe, and browser activity into daily Obsidian reports generated through Claude Code
+- [Screenpipe SQLite LLM Report](https://github.com/xqy281/Screenpipe_SQLite_LLM_report): Configurable pipeline for turning captured OCR into reports and procedures through an LLM API; documentation in Chinese
 
 ### Dashboards and desktop tools
 
@@ -98,6 +103,10 @@ Descriptions below are based on each project's public documentation, checked Oct
 - [Screenpipe Dashboard](https://github.com/yujiachen-y/screenpipe-dashboard): macOS menu bar status and a timeline viewer for screenshots, OCR, and audio transcripts
 - [Screenpipe Manager](https://github.com/acyclic-eu/screenpipe-manager): macOS recording controls and a local web dashboard with search and screenshot thumbnails
 - [Screenpipe Raycast](https://github.com/neo773/screenpipe-raycast): Raycast extension for managing pipes; built for the earlier pipe system
+- [Ramondino](https://github.com/Shigakuresama/Ramondino): Floating Windows assistant with local voice transcription, Open Interpreter, and optional Screenpipe history; documentation in Spanish
+- [blitz.screenpipe](https://github.com/itz4blitz/blitz-screenpipe): Omarchy bar plugin that records meetings into an inbox and lets users file them into selected folders
+- [ScoreGoals](https://github.com/contains-studio/scoregoals): macOS activity tracker that uses Screenpipe context to compare recorded work with written goals and user corrections
+- [Rewind pipe](https://github.com/64johnlee/pipe-rewind): Earlier Next.js pipe with a searchable timeline, app-usage estimates, and OpenAI-powered chat over recorded history
 
 ### Workflow integrations
 
@@ -106,11 +115,18 @@ Descriptions below are based on each project's public documentation, checked Oct
 - [kordi Subscription Finder](https://github.com/kordi-labs/kordi-screenpipe-pipe): Pipe that finds billing signals in screen text and sends subscription records to kordi
 - [focuspipe](https://github.com/pleasedodisturb/focuspipe): Focus and context-switch tracking pipes with Goose integration, session summaries, and configurable nudges
 - [Screenpipe Plugins](https://github.com/fhorn97/screenpipe-plugins): Next.js pipe examples for meeting summaries, Notion sync, and Reddit posting, using the earlier pipe architecture
+- [Screenpipe Context Pipes](https://github.com/Martin-Hausleitner/screenpipe-context-pipes): Connector scripts that summarize ActivityWatch, imported WHOOP data, YouTube sessions, and other metadata into Screenpipe memories; writes are opt-in
+- [OysterWorkflow Core](https://github.com/ShuxinYang111/oysterworkflow-core): CLI pipeline for turning captured activity into candidate OpenClaw skills using an OpenAI-compatible model; its documented setup uses a pinned Screenpipe fork
+- [Meeting Summarizer pipe](https://github.com/64johnlee/pipe-meeting-summarizer): Earlier Next.js pipe using Screenpipe transcripts and OpenAI to produce meeting notes, decisions, and action items
+- [Activity Summary pipe](https://github.com/64johnlee/pipe-activity-summary): Earlier Next.js pipe generating daily and weekly activity reports from Screenpipe context using OpenAI
+- [Engineer Bot pipe](https://github.com/64johnlee/pipe-engineer-bot): Earlier Next.js pipe that drafts GitHub and Linear issue updates from recorded context, with posting actions and provider credentials
 
 ### Clients and developer tools
 
 - [Screenpipe Python Client](https://github.com/TanGentleman/screenpipe-python-client): Python client for exploring and debugging Screenpipe's API
 - [Screenpipe SDK for Rust](https://github.com/heavenly/screenpipe-sdk-rs): Experimental community API wrapper; the author notes that most functions were not tested
+- [Screenpipe Electron template](https://github.com/neo773/screenpipe-electron): Electron and React starter with a client for the local Screenpipe health endpoint; older template
+- [Screenpipe Tauri template](https://github.com/LorenzoBloedow/screenpipe-tauri-template-dev): Tauri, React, and TypeScript starter with Screenpipe health and vision hooks; older template
 
 ### Hackathon prototypes
 
@@ -124,6 +140,10 @@ These projects are useful examples to inspect and adapt. Their original setup ma
 - [Bright Path](https://devpost.com/software/bright-path-81pk03): Hackathon learning assistant using Screenpipe screen context and Gemini to help with educational tasks
 - [Lenz](https://devpost.com/software/lenz): Hackathon reading assistant bridging Screenpipe OCR and CrewAI through an MCP server
 - [wzrd.work](https://devpost.com/software/wzrd-work): Hackathon workflow-capture prototype combining Screenpipe with computer-use and conversational tools
+- [CoBrain](https://devpost.com/software/cobrain): Voice-controlled desktop prototype using Screenpipe context, Qdrant memory, Deepgram, and OpenAI agents
+- [continue.ai](https://devpost.com/software/continue-ai): macOS work-resumption prototype that turns Screenpipe activity into checkpoints using OpenAI vision, with ElevenLabs voice interaction
+- [MiniMe](https://devpost.com/software/minime-qtjlfg): Personal-memory prototype that combines Screenpipe OCR with a preference graph and Gemini-powered screen assistance
+- [BrokeBro](https://devpost.com/software/brokebro): Hackathon prototype that detects food-ordering activity through Screenpipe OCR and triggers a Vapi/Groq voice reminder
 
 ### Integration requests in other projects
 
@@ -156,6 +176,15 @@ Use the [connections guide](https://docs.screenpipe.com/connections) and [connec
 - [Build a second brain](https://docs.screenpipe.com/second-brain): Official guide to organizing captured context into personal knowledge
 - [Screenpipe Blog](https://screenpi.pe/blog): Official blog with guides and updates
 - [Screenpipe Docs: Getting Started](https://docs.screenpipe.com/getting-started): Quick start guide
+- [Feed Screenpipe into Petals](https://petals.chat/guides/screenpipe): Petals' guide to sending captured activity to its transcript-ingestion API with a custom script; requires a Petals API key and has no native Screenpipe connector
+- [Screenpipe at South Park Commons](https://screenpipe.com/blog/screenpipe-at-south-park-commons): Technical talk and interactive deck covering capture, storage, the local API, and agent execution
+
+### Historical tutorials
+
+These explain earlier pipe APIs and app layouts. Use the current setup guides above for installation and authentication.
+
+- [How to create an AI agent powered by your screen & mic](https://dev.to/louis030195/how-to-create-an-ai-agent-powered-by-your-screen-mic-5g9b): Louis Beaumont's January 2025 walkthrough of a Next.js activity-analysis pipe using Ollama
+- [How to use Llama3.2 to write daily logs in Notion based on your screen](https://dev.to/louis030195/how-to-use-llama32-to-write-daily-logs-in-notion-based-on-your-screen-563o): October 2024 walkthrough and video of a Screenpipe-to-Notion workflow
 
 ### Practical workflow guides
 
@@ -170,6 +199,8 @@ Use the [connections guide](https://docs.screenpipe.com/connections) and [connec
 
 - [ScreenLeak](https://github.com/screenpipe/screenleak): Benchmark for sensitive-information redaction in screen text, screenshots, and computer-use traces
 - [River AI + Screenpipe training](https://github.com/screenpipe/river-ai-screenpipe-training): Experimental toolkit for curating selected chats and Screenpipe context into reviewed training data, running River fine-tuning, and evaluating results
+- [OBS PII Redactor](https://github.com/georgebreen/obs-pii-redactor): OBS Studio proof of concept using Screenpipe's redaction models to mask detected sensitive regions in video; image detection is experimental and text detection has additional limitations
+- [Secret Leak Guard](https://github.com/RudraBhaskar9439/secret-leak-guard): Experimental credential-pattern detector that reads Screenpipe OCR and raises desktop alerts; detection happens after Screenpipe has captured the text
 
 ## Contributing
 
