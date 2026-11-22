@@ -55,6 +55,15 @@ The app calls pipes **Scheduled tasks**. They are AI automations defined with a 
 
 Screenpipe exposes an [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server for retrieving recorded context and managing supported actions. Use **Settings > Connections** in the desktop app for the recommended setup: it configures the bundled runtime and `SCREENPIPE_LOCAL_API_KEY`. Manual setup requires a running Screenpipe instance; follow the [official MCP installation guide](https://github.com/screenpipe/screenpipe/tree/main/packages/screenpipe-mcp#installation). Retrieved context is available to the connected assistant and its configured model provider.
 
+### Remote MCP services
+
+Screenpipe's registry browser also supports hosted remote MCP services. For Kling AI, open **Settings > Connections > Custom MCP Server > Browse Registry**, search for Kling, and choose the region that matches your account:
+
+- [Kling AI Global](https://kling.ai/mcp/plugin) — registry ID io.github.klingai-dev/kling-ai
+- [Kling AI China](https://klingai.com/mcp/plugin) — registry ID io.github.klingai-dev/kling-ai-cn
+
+Authorize with the matching Kling account. Image and video generation uses credits in that region. See the [official Kling MCP guide](https://kling.ai/app/mcp/guide).
+
 ### Compatible Clients
 
 - [Claude Desktop](https://claude.ai/download): Anthropic's desktop app
